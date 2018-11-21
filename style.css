@@ -1,0 +1,94 @@
+body{
+    font-family: sans-serif ; 
+    padding: 0px ; 
+    margin: 0px; 
+    background-color: #eee;
+}
+header{
+    padding: 1em ; 
+    display: flex ; 
+    background: -webkit-linear-gradient(to right, #74ebd5, #acb6e5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #74ebd5, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:#fff ; 
+}
+header h2{
+    padding: 0px; 
+    margin: 0px; 
+    font-weight: lighter ; 
+}
+#wrapper{
+    margin: 1em auto ; 
+    color:#777 ; 
+    text-align: center ; 
+    border: 1px solid #eee ;  
+    padding: 1em ; 
+    max-width: 100vh ; 
+    background-color:#ddd ; 
+    display: flex ; 
+    flex-direction: column ;  
+    box-shadow:2px 4px 0px 1px #ccc; 
+}
+#display-div{
+    background: #ffffff ; 
+    border:1px solid #ccc; 
+    margin: 2em auto ;
+    min-width: 500px; 
+    display: none ; 
+    box-shadow:2px 4px 0px 1px #aaa; 
+
+}
+.container:first-child{
+    background-color: #62beb1;  
+    color:#fff ; 
+}
+.container{
+    font-size: 1.1em;
+    background-color: #eee;
+    display: flex;
+    border: 1px solid #ccc;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2em;
+}
+#description{
+    font-size: 0.7em ; 
+    font-style: italic ; 
+    font-weight: lighter ; 
+}
+#flag{
+    font-size: 6em ; 
+}
+#input-field{  
+    padding: 0.5em 1em  ; 
+    outline :none ; 
+    border:1px solid silver; 
+    max-width: 30em;
+    box-shadow:1px 1px 0px 1px #999; 
+    font-size: 1.1em ; 
+    color:#666 ; 
+}
+
+#search-button{
+    padding: 0.5em 1em  ; 
+    font-weight: lighter ; 
+    font-size: 1.1em ; 
+    cursor: pointer;
+    background-color: #AAbbcc ; 
+    color:#fff ; 
+    background: linear-gradient(to right, #74ebd5, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border:none ; 
+    box-shadow:1px 1px 0px 1px #999; 
+    margin-left: 1em ; 
+}
+#search-button:focus{
+    outline:none; 
+}
+#error{
+    text-align: center ; 
+    padding: 0.5em ; 
+    background-color: #ee5253;
+    display: none; 
+    max-width: 50% ;
+    margin: 1em auto ; 
+    color:#eee ; 
+}

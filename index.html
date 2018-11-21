@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome</title>
+</head>
+<body>
+    <header>
+        <h2>Patriam</h2>
+    </header>
+    <div id="wrapper">
+        <span id="error"></span>    
+        <div id="display-div">
+            <div class="container">
+                 <h2 id="country-name"></h2>
+                <div id="flag"></div>
+            </div>
+            <div class="container">
+                    <span>Capital : </span>
+                    <h4 id="capital"></h4>
+               </div>
+               <div class="container">
+                    <span>Continent : </span>
+                    <h4 id="continent"></h4>
+               </div>
+               <div class="container">
+                    <span >Region : </span>
+                    <h4 id="sub-region"></h4>
+               </div>
+               <div class="container">
+                    <span >Temperature : </span>
+                    <h2 id="temp-icon"></h2>
+                    <h2 id="temp"></h2>
+               </div>
+               <div class="container">
+                    <span>Area : </span>
+                    <h4 id="area"></h4>
+               </div>
+               <div class="container">
+                    <span >Languages : </span>
+                    <h4 id="languages"></h4>
+               </div>
+        
+        </div>
+        <div id="search-div">
+            <label>Country : </label><input id="input-field"  type="text"/>
+            <button onclick="return searchOfCountry();" id="search-button" onclick>Search</button>
+        </div>
+        
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="app.js"></script>
