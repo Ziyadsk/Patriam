@@ -1,5 +1,5 @@
 function searchOfCountry(){
-
+    
     inputtedValue = document.querySelector("#input-field").value;  
     let description ; 
     let res ; 
@@ -12,7 +12,9 @@ function searchOfCountry(){
     let languages = "" ; 
     let countryName = document.querySelector("#country-name");
     let errorMessage = document.querySelector("#error");
-    fetch("https://raw.githubusercontent.com/mledoze/countries/master/countries.json").then(response =>{
+    
+
+    fetch("https://raw.githubusercontent.com/ziyadsk/Patriam/master/countries.json").then(response =>{
         return response.json(); 
     }).then(data => {
         for (let obj of data){
@@ -36,13 +38,10 @@ function searchOfCountry(){
              }
         }
         if(description === undefined){
-            console.log("Getlak ehna !");
-            
             errorMessage.innerHTML = "Inexistant country";           
             errorMessage.style.display= "block";
             return false ; 
         }
-        console.log(res);
 
         let countryFlag = document.querySelector("#flag");
         let countryCapital  = document.querySelector("#capital");
@@ -62,15 +61,13 @@ function searchOfCountry(){
 
         displayWeather(latlongArr[0],latlongArr[1]) ; 
     }).catch(error => {
-        console.log(error);
-       
+        console.log("inxistant country");
     });
 
 }
-
+// fetch and display the weather 
 function displayWeather(lat,long){
-    // fetch the JSON data
-    let weatherData ; 
+
     fetch(`https://fcc-weather-api.glitch.me/api/current?lat=${lat}&lon=${long}`).then(response => {
        return response.json(); 
     }).then(data => {  
@@ -83,5 +80,3 @@ function displayWeather(lat,long){
         console.log("coudnt fetch data!");
     });
 }
-
-
